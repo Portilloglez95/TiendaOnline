@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Seccion de Buscar producto | Administrador </title>
+<style>
+h1 {
+	text-align: center;
+	font-size: 38px;
+	border: 1px solid black;
+	color:black;
+	background:#8EADF7;
+	margin-bottom:40px;
+  	margin-top:20px;
+}	
+
+form {
+    width: 450px;
+    margin: auto;
+    background:#8EADF7;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    bottom: -100px;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+input.btn{
+	width: 200px;
+	margin-left: 104px;
+	background-color: white;
+	border: solid black 1px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input:focus{
+	border:3px solid #0774F0;
+	background-color: #C6D7FF;
+}
+
+input:hover{
+	background-color:#E4E7F0;
+}
+
+form label{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 100px;
+}
+
+footer p{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>Búsqueda de registros.</h1>
+
+<form action="adminBuscar.php" method="get">
+
+	<label for="articulo"> Producto a buscar: </label>
+	<input type="text" name="articulo">
+
+	<br><br>
+	<input type="submit" value="Buscar">
+</form> 
+
+
+<br><br>
+  <div class="boton-regresar">
+    <input type="button" value="Panel de Administrador" onclick="window.location='adminPanel.php'" style="font-family: Verdana; font-size: 10 pt">
+  </div>
+
+  <br><hr>
+  <footer>
+      <p class="copyright">
+          Todos los derechos reservados &copy;. Fabián Portillo González.
+      </p>
+  </footer>
+</body>
+</html>
